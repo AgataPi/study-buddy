@@ -1,12 +1,13 @@
-import React from 'react';
-// import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
 import UsersList from 'components/organisms/UsersList/UsersList';
 import { ViewWrapper } from 'components/molecules/ViewWrapper/ViewWrapper';
+import { UsersContext } from 'providers/UsersProvider';
 
-const Dashboard = ({ deleteUser, users }) => {
+const Dashboard = () => {
+  const { users } = useContext(UsersContext);
   return (
     <ViewWrapper>
-      <UsersList deleteUser={deleteUser} users={users} />
+      <UsersList users={users} />
     </ViewWrapper>
   );
 };
