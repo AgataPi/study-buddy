@@ -7,6 +7,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.25.0",
+    "downshift": "^6.1.7",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
     "lodash.debounce": "^4.0.8",
