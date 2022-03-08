@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   justify-content: flex-start;
 `;
 
-export const StyledAverage = styled(Average)`
+export const BigAverage = styled(Average)`
   width: 68px;
   height: 68px;
   font-size: ${({ theme }) => theme.fontSize.xl};
@@ -24,15 +24,16 @@ export const StyledDetails = styled.div`
   padding: 40px;
 `;
 
-export const StyledLabel = styled.div`
+export const StyledLabel = styled.h3`
   font-size: ${({ theme }) => theme.fontSize.l};
-  color: ${({ theme }) => theme.colors.darGrey};
+  color: ${({ theme }) => theme.colors.darkGrey};
+  margin-bottom: 0;
 `;
 
-export const StyledInfo = styled.div`
+export const StyledInfo = styled.p`
   font-size: ${({ theme, isBig }) => (isBig ? theme.fontSize.xl : theme.fontSize.l)};
   color: ${({ theme }) => theme.colors.darkGrey};
-  margin-right: 20px;
+  margin: 10px 20px 20px 0; ;
 `;
 
 export const StyledSubjectInfo = styled.div`
