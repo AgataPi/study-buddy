@@ -1,6 +1,6 @@
 import Note from 'components/molecules/Note/Note';
 import React, { useState } from 'react';
-import { useGetNotesQuery } from 'store';
+import { useGetNotesQuery } from 'store/api/notes';
 import { Wrapper, WidgetHandler, NotesWrapper } from './NoteWidget.styles';
 
 const NotesWidget = () => {
