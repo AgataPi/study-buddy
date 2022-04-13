@@ -11,6 +11,8 @@ export const Wrapper = styled.div`
 
 export const GroupWrapper = styled(ViewWrapper)`
   margin: 0;
+  overflow-y: scroll;
+  max-height: 85vh;
 `;
 
 export const TitleWrapper = styled.div`

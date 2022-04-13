@@ -13,10 +13,7 @@ const StudentsListItem = ({ userData: { average, name, attendance = '0%' }, ...p
     <Wrapper {...props}>
       <Average value={average}>{average}</Average>
       <StyledInfo>
-        <p>
-          {name}
-          <DeleteButton onClick={() => deleteUser(name)} />
-        </p>
+        <p>{name}</p>
         <p>attendance: {attendance}</p>
       </StyledInfo>
     </Wrapper>
