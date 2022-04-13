@@ -19,10 +19,18 @@ const notesApi = createApi({
       }),
       invalidatesTags: ['Notes'],
     }),
+    removeNote: builder.mutation({
+      query: (body) => ({
+        url: 'notes',
+        method: 'DELETE',
+        body,
+      }),
+      invalidatesTags: ['Notes'],
+    }),
   }),
 });
 // use[MethodName][MethodType]
-export const { useGetNotesQuery, useAddNoteMutation } = notesApi;
+export const { useGetNotesQuery, useAddNoteMutation, useRemoveNoteMutation } = notesApi;
 
 export const store = configureStore({
   reducer: {
